@@ -1,0 +1,270 @@
+{
+  "/home/wek/Escritorio/ccxtv2-next/setup_routines_institutional.py": {
+    "mtime": 1778435388.7969823,
+    "hash": "5d8750451ae15cf7ce47f5b66737649a"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/audit_actions.py": {
+    "mtime": 1778430003.3365,
+    "hash": "b8eddaf99f6acb331f1ad4eb4ec982b5"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/absorption_detector.py": {
+    "mtime": 1778430110.9877138,
+    "hash": "521ec6da012c3f038bd46d2a18fa2ab0"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/funding_actions.py": {
+    "mtime": 1778440171.443923,
+    "hash": "dbad4af0796ffe4e40d9c1fd6f23876b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/workflows.py": {
+    "mtime": 1778431124.4792285,
+    "hash": "8fb2a11b27c4358a32f157f255f92ffd"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/market_actions.py": {
+    "mtime": 1778430069.3319433,
+    "hash": "70628f9b80f0ab711ac3fddc2dbd8c41"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/insight_actions.py": {
+    "mtime": 1778430003.3384993,
+    "hash": "7e10783774bac65164bccd9db133a45e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/workflows_institutional.py": {
+    "mtime": 1778439977.6651835,
+    "hash": "60399f25c786e720272c882a8a7c9304"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/workflows_advanced.py": {
+    "mtime": 1778434884.4590938,
+    "hash": "4321fecb2c86067126490e481f83092e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/__init__.py": {
+    "mtime": 1778428200.0527015,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/actions/shadow_actions.py": {
+    "mtime": 1778430003.3464973,
+    "hash": "fbbac7bfce02875d7d2eaccf8b12d491"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/redis_bridge.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "c05a8cca251fe61df468a7f3e3b30bfd"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/hub_reader.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "adb9554b8c002a66cbb54763cd6ccd0f"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/hub.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "1b1546cae8cfa860c2bb57c3e731639c"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/data_integrity.py": {
+    "mtime": 1778440000.228557,
+    "hash": "1793e058e1d917d2aaa26b128b9ea22e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/execution_guardian.py": {
+    "mtime": 1778429934.0413187,
+    "hash": "ef0b17bf8c4d8c060d821ad4a1f89789"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/__init__.py": {
+    "mtime": 1778435780.6273482,
+    "hash": "8ccc608f99d61ce5bc4375311852b86b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/config.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "e8e5c836e2664b3cef6e43afe2f017d9"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/veto_system.py": {
+    "mtime": 1778429934.0413187,
+    "hash": "2a74203a21ecdfa0d31cfb7e2c9ce8e9"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/shadow_tester.py": {
+    "mtime": 1778429934.0413187,
+    "hash": "0a35bafe66c1df669544fd0bd99a752e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/engines/ict_engine.py": {
+    "mtime": 1778435780.622348,
+    "hash": "ed921c7b59bf857220779c70c7025958"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/engines/sr_levels.py": {
+    "mtime": 1778435780.6173477,
+    "hash": "a3f42b752d3408dad889077417b544d1"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/engines/__init__.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/shared/engines/zscore.py": {
+    "mtime": 1778429934.0403187,
+    "hash": "43bb0b308811bc266edbf499a18519ab"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/actions/hl_scanner.py": {
+    "mtime": 1778428514.0827742,
+    "hash": "94b070ae7dbb924ba8b3c6601ade7769"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/actions/__init__.py": {
+    "mtime": 1778428514.0827742,
+    "hash": "6d5222cd2090cfb2634c4f84deb4e21b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/actions/hl_funding.py": {
+    "mtime": 1778428514.0827742,
+    "hash": "fb9807be9e833b1de63820a0c2b94af9"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/redis_bridge.py": {
+    "mtime": 1778428923.705108,
+    "hash": "c05a8cca251fe61df468a7f3e3b30bfd"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/hub_reader.py": {
+    "mtime": 1778429237.365297,
+    "hash": "adb9554b8c002a66cbb54763cd6ccd0f"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/hub.py": {
+    "mtime": 1778429025.5954406,
+    "hash": "1b1546cae8cfa860c2bb57c3e731639c"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/data_integrity.py": {
+    "mtime": 1778439955.1477985,
+    "hash": "1793e058e1d917d2aaa26b128b9ea22e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/execution_guardian.py": {
+    "mtime": 1778429175.047867,
+    "hash": "ef0b17bf8c4d8c060d821ad4a1f89789"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/__init__.py": {
+    "mtime": 1778434161.361199,
+    "hash": "8ccc608f99d61ce5bc4375311852b86b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/config.py": {
+    "mtime": 1778428995.5647528,
+    "hash": "e8e5c836e2664b3cef6e43afe2f017d9"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/veto_system.py": {
+    "mtime": 1778429219.3568838,
+    "hash": "2a74203a21ecdfa0d31cfb7e2c9ce8e9"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/shadow_tester.py": {
+    "mtime": 1778429241.1543841,
+    "hash": "0a35bafe66c1df669544fd0bd99a752e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/engines/ict_engine.py": {
+    "mtime": 1778434149.4917464,
+    "hash": "ed921c7b59bf857220779c70c7025958"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/engines/sr_levels.py": {
+    "mtime": 1778433959.226657,
+    "hash": "a3f42b752d3408dad889077417b544d1"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/engines/__init__.py": {
+    "mtime": 1778429007.062016,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/shared/engines/zscore.py": {
+    "mtime": 1778429404.0141249,
+    "hash": "43bb0b308811bc266edbf499a18519ab"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/base.py": {
+    "mtime": 1778428440.486108,
+    "hash": "0aa63bb0ed85f54add34e2b85de4b78b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/squeeze_monitor.py": {
+    "mtime": 1778428448.3762865,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/senior_audit.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/whale_monitor.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/level_break.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/orchestrator.py": {
+    "mtime": 1778428420.083647,
+    "hash": "aaddd1c59213777a6b4a7263681508ee"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/ignition_bridge.py": {
+    "mtime": 1778428448.3762865,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/spoof_detector.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/sfp_sentinel.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/opportunity.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/volume_monitor.py": {
+    "mtime": 1778428448.3772864,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/sentinels/__init__.py": {
+    "mtime": 1778428448.3762865,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/scripts/alpha_scout.py": {
+    "mtime": 1778441571.270812,
+    "hash": "c9bf8d24e7987b43b5544c26ae654f28"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/scripts/scalp_analysis.py": {
+    "mtime": 1778442189.5417006,
+    "hash": "2c2279e81b28730631b361983088b24c"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/scripts/sanity_trading_plan.py": {
+    "mtime": 1778443174.8502975,
+    "hash": "e2636e400dc71dc033a97291e53ec7a7"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/README.md": {
+    "mtime": 1778440981.7538223,
+    "hash": "721ae313d16415e607560e30284e1ac8"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/AUDIT_EVOLUTIONARY_LOOP.md": {
+    "mtime": 1778440965.7942963,
+    "hash": "05f0c9141d44046b3e8ac28bf3c7067a"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/conda.yaml": {
+    "mtime": 1778428200.0437012,
+    "hash": "be1e8e51930b488d6515078ef5bc6368"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/README.md": {
+    "mtime": 1778432312.0303297,
+    "hash": "abc3604bca39621636d036dedea1c45b"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/funding_server/package.yaml": {
+    "mtime": 1778428200.0397012,
+    "hash": "9e1271bb29dee0fb99b0d21d2eed7d48"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/conda.yaml": {
+    "mtime": 1778428246.3227367,
+    "hash": "dbf68d52bb9f3e9dae5d75c2f1b56753"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/README.md": {
+    "mtime": 1778428325.6685183,
+    "hash": "c614a32ef99034445d61efe74a229c84"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/action_servers/hyperliquid_server/package.yaml": {
+    "mtime": 1778428206.1878386,
+    "hash": "4f009527b40d657f655b0457871196b0"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/prompts/setup_routines_prompt.md": {
+    "mtime": 1778434608.7998536,
+    "hash": "0447993bb1faa86657410889be37c479"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/config/settings.yaml": {
+    "mtime": 1778430021.0280604,
+    "hash": "86de65764f6b1d8737418bbad7847b7e"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/config/thresholds.yaml": {
+    "mtime": 1778428360.3893,
+    "hash": "06bef3a1abe31a5b06d83902fc8939e2"
+  },
+  "/home/wek/Escritorio/ccxtv2-next/config/alerts.yaml": {
+    "mtime": 1778428374.8596263,
+    "hash": "7996771add6836c1560a0ced3f066812"
+  }
+}
