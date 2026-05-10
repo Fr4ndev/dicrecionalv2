@@ -1,0 +1,46 @@
+# ──── Golden Rules (IMMUTABLE) ────
+# DO NOT change these without backtest validation.
+# Source: ccxtv2 @ IntelligenceHub, validated with institutional flow data.
+
+vp_threshold: 0.62       # VPIN gate — below = NO EXECUTION (informed flow)
+basis_threshold_pct: -0.05  # Spot premium: negative = accumulation stealth
+cvd_accel_gate: 0.0       # CVD'' must be positive to confirm aggression
+obi_ignition: 0.40         # BTC/ETH coordinated ignition threshold
+obi_scalp_gate: 0.40       # Scalp OBI D20 gate
+absorption_gate: 0.60      # Iceberg absorption rate gate
+
+# ──── Execution Rules ────
+execution:
+  slippage_threshold: 0.0015   # 0.15% max slippage before micro-TWAP
+  trail_pct: 0.005             # Dynamic trailing stop percentage
+  twap_fragments: 5            # Micro-TWAP fragments on high slippage
+
+# ──── Guardian Rules ────
+guardian:
+  cooldown_hours: 4
+  max_consecutive_losses: 3
+  time_decay_ratio: 0.70       # Force close at 70% of label horizon
+
+# ──── Symbols ────
+symbols:
+  binance:
+    BTC: "BTC/USDT:USDT"
+    ETH: "ETH/USDT:USDT"
+    SOL: "SOL/USDT:USDT"
+    LINK: "LINK/USDT:USDT"
+  bybit:
+    BTC: "BTC/USDT:USDT"
+    ETH: "ETH/USDT:USDT"
+    SOL: "SOL/USDT:USDT"
+    LINK: "LINK/USDT:USDT"
+    HYPE: "HYPE/USDT:USDT"
+  okx:
+    BTC: "BTC/USDT:USDT"
+    ETH: "ETH/USDT:USDT"
+    SOL: "SOL/USDT:USDT"
+    LINK: "LINK/USDT:USDT"
+  hyperliquid:
+    BTC: "BTC/USDC:USDC"
+    ETH: "ETH/USDC:USDC"
+    SOL: "SOL/USDC:USDC"
+    HYPE: "HYPE/USDC:USDC"

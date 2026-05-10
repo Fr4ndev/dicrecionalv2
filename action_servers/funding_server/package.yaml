@@ -1,0 +1,42 @@
+spec-version: v2
+name: funding-action-server
+version: 0.2.0
+description: |
+  Funding Rate + OI + OBI monitor para BTC/ETH perpetuos.
+  Datos directos de Binance, Bybit, OKX, Hyperliquid via CCXT.
+  Sin scraping. Sin dependencias externas del proyecto.
+
+dependencies:
+  conda-forge:
+    - python=3.11
+    - pip
+  pypi:
+    - sema4ai-actions>=0.1.0
+    - ccxt>=4.4.0
+    - pandas
+    - numpy
+    - python-dotenv
+    - httpx
+    - tenacity
+    - beautifulsoup4
+    - lxml
+    - pytz
+    - PyYAML
+    - matplotlib
+    - seaborn
+    - scikit-learn
+    - scipy
+    - tabulate
+    - redis
+
+pythonpath:
+  - .
+
+packaging:
+  exclude:
+    - __pycache__/
+    - "*.pyc"
+    - ".git/"
+    - "*.log"
+    - data/
+    - reports/

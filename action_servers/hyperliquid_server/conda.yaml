@@ -1,0 +1,14 @@
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - sema4ai-actions>=0.1.0
+    - ccxt>=4.4.0
+    - pandas>=2.0.0
+    - numpy>=1.24.0
+    - python-dotenv
+    - httpx

@@ -1,0 +1,28 @@
+spec-version: v2
+name: hyperliquid-funding-server
+version: 0.1.0
+description: |
+  Hyperliquid-specific funding rate scanner and altcoin opportunity detector.
+  Monitors funding premiums, OI, and volume for ALL Hyperliquid perpetuals.
+  Designed to detect shortable/longeable tokens beyond majors (BTC/ETH).
+  Uses CCXT direct. Zero dependencies on main ccxtv2 project.
+
+dependencies:
+  conda-forge:
+    - python=3.11
+    - pip
+  pypi:
+    - sema4ai-actions>=0.1.0
+    - ccxt>=4.4.0
+    - pandas
+
+pythonpath:
+  - .
+
+packaging:
+  exclude:
+    - __pycache__/
+    - "*.pyc"
+    - ".git/"
+    - "*.log"
+    - data/

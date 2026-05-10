@@ -1,0 +1,143 @@
+# ═══════════════════════════════════════════════════
+# ccxtv2 — Configuration
+# ═══════════════════════════════════════════════════
+
+# Ticker Universe
+universe:
+  - symbol: BTC/USDT:USDT
+    spot: BTC/USDT
+    name: Bitcoin
+    circulating_supply: 19800000
+  - symbol: ETH/USDT:USDT
+    spot: ETH/USDT
+    name: Ethereum
+    circulating_supply: 120500000
+  - symbol: TAO/USDT:USDT
+    spot: TAO/USDT
+    name: Bittensor
+    circulating_supply: 7400000
+  - symbol: SOL/USDT:USDT
+    spot: SOL/USDT
+    name: Solana
+    circulating_supply: 440000000
+  - symbol: HYPE/USDT:USDT
+    spot: HYPE/USDT
+    name: Hyperliquid
+    circulating_supply: 333900000
+  - symbol: LINK/USDT:USDT
+    spot: LINK/USDT
+    name: Chainlink
+    circulating_supply: 626850000
+
+# Exchange
+exchange:
+  id: binance
+  type: swap                    # 'swap' for futures, 'spot' for spot
+  rate_limit: true
+  timeout: 30000                # ms
+
+# Timeframes
+timeframes:
+  orderflow:
+    htf: 1d
+    htf_limit: 500
+    ltf: 4h
+    ltf_limit: 500
+  spotdiff:
+    tf: 1d
+    limit: 365
+  zscore:
+    tf: 1d
+    limit: 500
+    rolling_window: 100
+  heatmap:
+    4h: 2190                    # ~1y
+    1d: 365
+    1w: 52
+    1M: 12
+
+# Thresholds
+thresholds:
+  zscore_overvalued: 2.0
+  zscore_undervalued: -2.0
+  absorption_z_threshold: 2.0
+  kelly_risk_reward: 2.0
+  significant_delta_std: 1.5
+  fractal_window: 5
+  heatmap_bins: 50
+  heatmap_smooth_sigma: 3
+
+# Scheduler (intervals in hours)
+scheduler:
+  orderflow_hours: 4
+  spotdiff_hours: 1
+  zscore_hours: 24
+  heatmap_hours: 4
+
+# Visual Theme
+theme:
+  bg: "#0b0e11"
+  bull: "#00C853"
+  bear: "#ff4444"
+  neutral: "white"
+  accent: "gold"
+  text: "white"
+  grid: "#2a2d33"
+
+# ═══════════════════════════════════════════════════
+# Funding + OI + OBI Monitor
+# ═══════════════════════════════════════════════════
+funding_monitor:
+  trigger_mode: "sensible"        # "sensible" or "conservative"
+  poll_interval_seconds: 12
+  orderbook_depth: 50
+  
+  # Assets and Exchanges
+  assets: ["BTC", "ETH"]
+  exchanges: ["binanceusdm", "bybit", "okx", "hyperliquid"]
+  
+  # Thresholds (Literature-validated)
+  thresholds:
+    funding_abs: 0.01             # % deviation of equilibrium (He, Zhang)
+    delta_funding_1h: 0.005       # % change (Ackerer)
+    delta_oi_1h: 15.0             # % forced liquidations/accumulation (Giagkiozis)
+    delta_oi_30m: 10.0            
+    obi_abs: 0.40                 # Imbalance threshold (Bieganowski)
+    
+    # Sensible ruleset parameters
+    sensible_delta_oi: 5.0
+    sensible_obi: 0.40
+    
+    # Conservative ruleset parameters
+    conservative_funding_abs: 0.01
+    conservative_delta_funding: 0.005
+    conservative_delta_oi: 10.0
+    conservative_obi: 0.45
+
+# ═══════════════════════════════════════════════════
+# SFP 2.0 Advanced Monitor (v2.2)
+# ═══════════════════════════════════════════════════
+sfp_monitor:
+  # Polling & Performance
+  poll_interval: 10.0             # seconds between cycles
+  idle_multiplier: 2.0            # multiply poll_interval when no active sweeps
+  inter_request_delay: 0.15       # seconds between API calls (rate limit safety)
+  level_refresh_hours: 4.0        # refresh pdH/pdL every N hours
+
+  # Strategy Rules
+  score_threshold: 7              # min score to trigger Telegram alert (out of 10)
+  rejection_timeout_min: 75       # Rule of 5 Candles: max minutes to wait for rejection
+  obi_threshold: 0.40             # |OBI| needed for full Layer 2 score
+  basis_threshold: 0.03           # |Basis%| needed for full Layer 1 score
+
+  # HTF Trend Filter
+  htf_trend_filter: true          # enable 4H EMA trend check
+  htf_ema_period: 21              # EMA period for trend direction
+
+  # Alerting
+  alert_cooldown_min: 60          # minutes between alerts for the same symbol
+
+  # Circuit Breaker
+  max_consecutive_errors: 5
+  circuit_breaker_pause: 60       # seconds to pause after circuit breaker trips
+

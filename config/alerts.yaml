@@ -1,0 +1,55 @@
+# ──── Alert Configuration ────
+
+alerts:
+  cooldowns:
+    whale: 300       # seconds — same symbol, whale type
+    sfp: 120         # seconds — same symbol, SFP type
+    level_break: 600 # seconds — BREAK only (NEVER proximity)
+    squeeze: 0       # seconds — gate: only score >= 2
+    spoof: 180       # seconds — SNAP_THRESHOLD >= 0.50
+
+  dedup:
+    strategy: "per_symbol_per_type"
+
+  priority_levels:
+    critical:
+      - sfp_confluence
+      - whale_block_1M_plus
+      - ignition_bridge_trigger
+    high:
+      - obi_divergence
+      - funding_extreme
+      - cvd_flip
+      - basis_anomaly
+    medium:
+      - volume_spike
+      - level_break_confirmed
+      - squeeze_score_3
+    info:
+      - system_health
+      - heartbeat
+      - model_drift_warning
+
+  thresholds:
+    squeeze:
+      min_score: 2           # Score < 2 = silence
+    spoof:
+      snap_threshold: 0.50   # Was 0.35 (too sensitive)
+    level_break:
+      alert_break_only: true # Never alert PROXIMITY
+    whale:
+      min_notional: 100000   # $100k minimum block size
+
+  daily_digest:
+    enabled: true
+    time: "08:00 UTC"
+    sections:
+      - pnl_summary
+      - top_signals_last_24h
+      - regime_state
+      - model_health
+      - action_server_health
+
+  telegram:
+    parse_mode: "Markdown"
+    disable_web_page_preview: true
